@@ -52,6 +52,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -177,6 +179,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\FieldNationSoapService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +207,168 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <None Include="Service References\FieldNationSoapService\configuration91.svcinfo" />
+    <None Include="Service References\FieldNationSoapService\configuration.svcinfo" />
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.addMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.addOnHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.addShipmentOnWorkorderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.approveAdditionalExpenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.approveWorkOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.attachCompanyDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.cancelWorkOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.CompanyDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.createWorkOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.CreateWorkOrderResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.deleteShipmentOnWorkorderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.detachCompanyDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getAssignedTechResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getProjectDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getProjectsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getShipmentIDFromVendorIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderKeyEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkorderProblemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderProgressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkorderShipmentHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkorderShipmentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderTotalPaymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.listAttachedCompanyDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.listCompanyDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.listMyTechniciansGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.listWorkOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.markWorkorderIncompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.Message.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.MethodResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.MyTechniciansGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.Projects.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.publishWorkOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.reportWorkorderProblemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.resolveWorkorderProblemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.routeWorkOrderToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.routeWorkOrderToProviderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.satisfyCloseoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.setCustomFieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.setLabelOnWorkorderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.ShipmentIDFromVendorID.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.Technician.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.TotalPayment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.unsetLabelOnWorkorderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkOrderKeyEvents.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkorderProblem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkOrderProgress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkorderShipmentHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkorderShipments.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\FieldNationSoapService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -234,6 +403,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Service References\FieldNationSoapService\fieldnation.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +415,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FieldNationSoapService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

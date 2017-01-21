@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:fieldnation" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="fieldnation" targetNamespace="urn:fieldnation" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types xmlns="http://schemas.xmlsoap.org/wsdl/">
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:fieldnation">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOfInts">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="xsd:int[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfCloseoutReqs">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:CloseoutReq[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="CloseoutReq">
+        <xsd:all>
+          <xsd:element name="closeout_requirement_name" type="xsd:string" />
+          <xsd:element name="closeout_requirement_desc" type="xsd:string" />
+          <xsd:element name="closeout_requirement_order" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAdditionalFields">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:AdditionalField[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfLabels">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Label[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfMessages">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Message[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTimeRanges">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:TimeRange[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAdditionalExpenses">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:AdditionalExpense[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfPaymentDeductions">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:PaymentDeduction[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfCompanyDocuments">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:CompanyDocument[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfProjects">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Projects[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfMyTechniciansGroups">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:MyTechniciansGroup[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfWorkLogs">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:WorkLog[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfWorkSchedule">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:WorkSchedule[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTechUploads">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:TechUpload[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfWorkorderProblems">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:WorkorderProblem[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfWorkorderShipments">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:WorkorderShipments[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="WorkorderShipmentHistories">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:WorkorderShipmentHistory[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:simpleType name="LocationType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Commercial" />
+          <xsd:enumeration value="Governmental" />
+          <xsd:enumeration value="Residential" />
+          <xsd:enumeration value="Educational" />
+          <xsd:enumeration value="Other" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="Login">
+        <xsd:all>
+          <xsd:element name="customerID" type="xsd:int" />
+          <xsd:element name="apiKey" type="xsd:string" />
+          <xsd:element name="effectiveUser" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="CheckInOutInfo">
+        <xsd:all>
+          <xsd:element name="gpsLatitude" type="xsd:float" />
+          <xsd:element name="gpsLongitude" type="xsd:float" />
+          <xsd:element name="trueTime" type="xsd:dateTime" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkOrder">
+        <xsd:all>
+          <xsd:element name="group" type="xsd:string" />
+          <xsd:element name="description" type="tns:ServiceDescription" />
+          <xsd:element name="location" type="tns:ServiceLocation" />
+          <xsd:element name="startTime" type="tns:TimeRange" />
+          <xsd:element name="payInfo" type="tns:PayInfo" />
+          <xsd:element name="techUploads" type="xsd:boolean" />
+          <xsd:element name="alertWhenPublished" type="xsd:boolean" />
+          <xsd:element name="additionalFields" type="tns:ArrayOfAdditionalFields" />
+          <xsd:element name="closeoutReqs" type="tns:ArrayOfCloseoutReqs" />
+          <xsd:element name="printLink" type="xsd:boolean" />
+          <xsd:element name="labels" type="tns:ArrayOfLabels" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkOrderKeyEvents">
+        <xsd:all>
+          <xsd:element name="createdTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="publishedTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="routedTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="assignedTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="workdoneTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="approvedTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="paidTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="canceledTime" nillable="true" type="xsd:dateTime" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceDescription">
+        <xsd:all>
+          <xsd:element name="category" type="xsd:int" />
+          <xsd:element name="title" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="instructions" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceLocation">
+        <xsd:all>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="type" type="tns:LocationType" />
+          <xsd:element name="country" type="xsd:string" />
+          <xsd:element name="address1" type="xsd:string" />
+          <xsd:element name="address2" type="xsd:string" />
+          <xsd:element name="city" type="xsd:string" />
+          <xsd:element name="state" type="xsd:string" />
+          <xsd:element name="zip" type="xsd:string" />
+          <xsd:element name="contactName" type="xsd:string" />
+          <xsd:element name="contactPhone" type="xsd:string" />
+          <xsd:element name="contactEmail" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="TimeRange">
+        <xsd:all>
+          <xsd:element name="timeBegin" type="xsd:dateTime" />
+          <xsd:element name="timeEnd" type="xsd:dateTime" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="PayInfo">
+        <xsd:all>
+          <xsd:element name="fixed" type="tns:PayInfoFixed" />
+          <xsd:element name="perHour" type="tns:PayInfoRate" />
+          <xsd:element name="perDevice" type="tns:PayInfoRate" />
+          <xsd:element name="blended" type="tns:PayInfoBlended" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="PayInfoFixed">
+        <xsd:all>
+          <xsd:element name="amount" type="xsd:float" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="PayInfoRate">
+        <xsd:all>
+          <xsd:element name="rate" type="xsd:float" />
+          <xsd:element name="maxUnits" type="xsd:float" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="PayInfoBlended">
+        <xsd:all>
+          <xsd:element name="baseAmount" type="xsd:float" />
+          <xsd:element name="baseHours" type="xsd:float" />
+          <xsd:element name="additionalHourlyRate" type="xsd:float" />
+          <xsd:element name="maxAdditionalHours" type="xsd:float" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="AdditionalField">
+        <xsd:all>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="value" nillable="true" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Label">
+        <xsd:all>
+          <xsd:element name="labelId" type="xsd:int" />
+          <xsd:element name="labelName" type="xsd:string" />
+          <xsd:element name="hideFromTech" type="xsd:int" />
+          <xsd:element name="techCanEdit" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="CreateWorkOrderResult">
+        <xsd:all>
+          <xsd:element name="success" type="xsd:boolean" />
+          <xsd:element name="message" type="xsd:string" />
+          <xsd:element name="workorderID" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Technician">
+        <xsd:all>
+          <xsd:element name="uid" type="xsd:int" />
+          <xsd:element name="firstName" type="xsd:string" />
+          <xsd:element name="lastName" type="xsd:string" />
+          <xsd:element name="city" type="xsd:string" />
+          <xsd:element name="state" type="xsd:string" />
+          <xsd:element name="zip" type="xsd:string" />
+          <xsd:element name="additionalFields" type="tns:ArrayOfAdditionalFields" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Message">
+        <xsd:all>
+          <xsd:element name="from" type="xsd:string" />
+          <xsd:element name="fromType" type="xsd:string" />
+          <xsd:element name="date" type="xsd:string" />
+          <xsd:element name="message" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="TotalPayment">
+        <xsd:all>
+          <xsd:element name="expenses" type="tns:ArrayOfAdditionalExpenses" />
+          <xsd:element name="deductions" type="tns:ArrayOfPaymentDeductions" />
+          <xsd:element name="laborEarned" type="xsd:float" />
+          <xsd:element name="totalApprovedExpenses" type="xsd:float" />
+          <xsd:element name="totalDeductions" type="xsd:float" />
+          <xsd:element name="paymentAmount" type="xsd:float" />
+          <xsd:element name="cancelFee" type="xsd:float" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="AdditionalExpense">
+        <xsd:all>
+          <xsd:element name="expenseID" type="xsd:int" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="expenseCategory" type="xsd:string" />
+          <xsd:element name="amount" type="xsd:float" />
+          <xsd:element name="approved" type="xsd:boolean" />
+          <xsd:element name="reasonDenied" type="xsd:string" />
+          <xsd:element name="quantity" type="xsd:float" />
+          <xsd:element name="customExpenseId" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="PaymentDeduction">
+        <xsd:all>
+          <xsd:element name="type" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="amount" type="xsd:float" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkOrderProgress">
+        <xsd:all>
+          <xsd:element name="totalDevices" type="xsd:int" />
+          <xsd:element name="totalHours" type="xsd:float" />
+          <xsd:element name="loggedWork" nillable="true" type="tns:ArrayOfWorkLogs" />
+          <xsd:element name="uploads" nillable="true" type="tns:ArrayOfTechUploads" />
+          <xsd:element name="workData" type="tns:ArrayOfAdditionalFields" />
+          <xsd:element name="closingNotes" type="xsd:string" />
+          <xsd:element name="assignmentConfirmed" type="xsd:int" />
+          <xsd:element name="readyToGo" type="xsd:int" />
+          <xsd:element name="workSchedule" nillable="true" type="tns:ArrayOfWorkSchedule" />
+          <xsd:element name="closeoutReqs" nillable="true" type="tns:ArrayOfCloseoutReqs" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="CompanyDocument">
+        <xsd:all>
+          <xsd:element name="documentID" type="xsd:int" />
+          <xsd:element name="title" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="type" type="xsd:string" />
+          <xsd:element name="updatedTime" type="xsd:dateTime" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkorderShipmentHistory">
+        <xsd:all>
+          <xsd:element name="shipmentTrackingId" type="xsd:string" />
+          <xsd:element name="vendor" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="status" type="xsd:string" />
+          <xsd:element name="lastActivityDate" type="xsd:dateTime" />
+          <xsd:element name="shipmentHistory" type="tns:ArrayOfShipmentHistoryItems" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfShipmentHistoryItems">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ShipmentHistoryItem[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ShipmentHistoryItem">
+        <xsd:all>
+          <xsd:element name="entry_date" type="xsd:dateTime" />
+          <xsd:element name="description" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Projects">
+        <xsd:all>
+          <xsd:element name="projectId" type="xsd:int" />
+          <xsd:element name="isEnabled" type="xsd:int" />
+          <xsd:element name="projectName" type="xsd:string" />
+          <xsd:element name="templates" type="tns:ArrayOfProjectTemplates" />
+          <xsd:element name="managers" type="tns:ArrayOfProjectManagers" />
+          <xsd:element name="customFields" type="tns:ArrayOfProjectCustomFields" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfProjectTemplates">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ProjectTemplate[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ProjectTemplate">
+        <xsd:all>
+          <xsd:element name="workorder_id" type="xsd:int" />
+          <xsd:element name="template_description" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfProjectManagers">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ProjectManager[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ProjectManager">
+        <xsd:all>
+          <xsd:element name="user_id" type="xsd:int" />
+          <xsd:element name="full_name" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfProjectCustomFields">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ProjectCustomField[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ProjectCustomField">
+        <xsd:all>
+          <xsd:element name="custom_field_id" type="xsd:int" />
+          <xsd:element name="custom_field_name" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="MyTechniciansGroup">
+        <xsd:all>
+          <xsd:element name="groupID" type="xsd:int" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="count" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="MethodResult">
+        <xsd:all>
+          <xsd:element name="success" type="xsd:boolean" />
+          <xsd:element name="message" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="TechUpload">
+        <xsd:all>
+          <xsd:element name="filename" type="xsd:string" />
+          <xsd:element name="filesize" type="xsd:int" />
+          <xsd:element name="downloadUrl" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkLog">
+        <xsd:all>
+          <xsd:element name="timeBegin" type="xsd:dateTime" />
+          <xsd:element name="timeEnd" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="hours" type="xsd:float" />
+          <xsd:element name="devices" type="xsd:int" />
+          <xsd:element name="checkInInfo" type="tns:CheckInOutInfo" />
+          <xsd:element name="checkOutInfo" type="tns:CheckInOutInfo" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkSchedule">
+        <xsd:all>
+          <xsd:element name="startTime" type="xsd:dateTime" />
+          <xsd:element name="endTime" nillable="true" type="xsd:dateTime" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkorderProblem">
+        <xsd:all>
+          <xsd:element name="problemID" type="xsd:int" />
+          <xsd:element name="reportedBy" type="xsd:string" />
+          <xsd:element name="reportedTime" type="xsd:dateTime" />
+          <xsd:element name="assistRequested" type="xsd:boolean" />
+          <xsd:element name="resolved" type="xsd:boolean" />
+          <xsd:element name="resolvedTime" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="resolvedBy" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="WorkorderShipments">
+        <xsd:all>
+          <xsd:element name="shipmentTrackingId" type="xsd:string" />
+          <xsd:element name="vendor" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="status" type="xsd:string" />
+          <xsd:element name="lastActivityDate" type="xsd:dateTime" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ShipmentIDFromVendorID">
+        <xsd:all>
+          <xsd:element name="workorderShipmentId" type="xsd:int" />
+          <xsd:element name="workorderId" type="xsd:int" />
+          <xsd:element name="found" type="xsd:boolean" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="createWorkOrderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorder" type="tns:WorkOrder" />
+    <wsdl:part name="useTemplate" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="listWorkOrdersInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="status" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderStatusInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderKeyEventsInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getAssignedTechInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderMessagesInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderTotalPaymentInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderProgressInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="technicianUID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="listCompanyDocumentsInput">
+    <wsdl:part name="login" type="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="getProjectsInput">
+    <wsdl:part name="login" type="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="projectId" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="listAttachedCompanyDocumentsInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="attachCompanyDocumentInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="documentID" type="xsd:int" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="detachCompanyDocumentInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="documentID" type="xsd:int" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="listMyTechniciansGroupsInput">
+    <wsdl:part name="login" type="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="routeWorkOrderToGroupInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="groupID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="routeWorkOrderToProviderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="userID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="approveAdditionalExpenseInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="expenseID" type="xsd:int" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="approve" type="xsd:boolean" />
+    <wsdl:part name="reason" type="xsd:string" />
+    <wsdl:part name="categoryID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="publishWorkOrderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="approveWorkOrderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="cancelWorkOrderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="acceptFees" type="xsd:boolean" />
+    <wsdl:part name="revertRequestReason" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addMessageInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="messageText" type="xsd:string" />
+    <wsdl:part name="mode" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="setCustomFieldInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="fieldName" type="xsd:string" />
+    <wsdl:part name="fieldValue" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setLabelOnWorkorderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="labelName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="unsetLabelOnWorkorderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="labelName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getWorkorderProblemsInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="reportWorkorderProblemInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="description" type="xsd:string" />
+    <wsdl:part name="assistRequested" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="resolveWorkorderProblemInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="problemID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="markWorkorderIncompleteInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="reason" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="createWorkOrderOutput">
+    <wsdl:part name="return" type="tns:CreateWorkOrderResult" />
+  </wsdl:message>
+  <wsdl:message name="listWorkOrdersOutput">
+    <wsdl:part name="return" type="tns:ArrayOfInts" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderStatusOutput">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderOutput">
+    <wsdl:part name="return" type="tns:WorkOrder" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderKeyEventsOutput">
+    <wsdl:part name="return" type="tns:WorkOrderKeyEvents" />
+  </wsdl:message>
+  <wsdl:message name="getAssignedTechOutput">
+    <wsdl:part name="return" type="tns:Technician" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderMessagesOutput">
+    <wsdl:part name="return" type="tns:ArrayOfMessages" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderTotalPaymentOutput">
+    <wsdl:part name="return" type="tns:TotalPayment" />
+  </wsdl:message>
+  <wsdl:message name="getWorkOrderProgressOutput">
+    <wsdl:part name="return" type="tns:WorkOrderProgress" />
+  </wsdl:message>
+  <wsdl:message name="listCompanyDocumentsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfCompanyDocuments" />
+  </wsdl:message>
+  <wsdl:message name="getProjectsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfProjects" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfProjects" />
+  </wsdl:message>
+  <wsdl:message name="listAttachedCompanyDocumentsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfCompanyDocuments" />
+  </wsdl:message>
+  <wsdl:message name="attachCompanyDocumentOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="detachCompanyDocumentOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="listMyTechniciansGroupsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfMyTechniciansGroups" />
+  </wsdl:message>
+  <wsdl:message name="routeWorkOrderToGroupOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="routeWorkOrderToProviderOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="approveAdditionalExpenseOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="publishWorkOrderOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="approveWorkOrderOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="cancelWorkOrderOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="addMessageOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="setCustomFieldOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="setLabelOnWorkorderOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="unsetLabelOnWorkorderOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="getWorkorderProblemsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfWorkorderProblems" />
+  </wsdl:message>
+  <wsdl:message name="reportWorkorderProblemOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="resolveWorkorderProblemOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="markWorkorderIncompleteOutput">
+    <wsdl:part name="return" type="tns:MethodResult" />
+  </wsdl:message>
+  <wsdl:message name="satisfyCloseoutInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+    <wsdl:part name="closeoutName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="satisfyCloseoutOutput">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteShipmentOnWorkorderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderShipmentID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="deleteShipmentOnWorkorderOutput">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addShipmentOnWorkorderInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderId" type="xsd:int" />
+    <wsdl:part name="shipmentName" type="xsd:string" />
+    <wsdl:part name="vendor" type="xsd:string" />
+    <wsdl:part name="vendorId" type="xsd:string" />
+    <wsdl:part name="description" type="xsd:string" />
+    <wsdl:part name="directionFromSite" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addShipmentOnWorkorderOutput">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getWorkorderShipmentsInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkorderShipmentsOutput">
+    <wsdl:part name="return" type="tns:ArrayOfWorkorderShipments" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentIDFromVendorIDInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="vendorID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentIDFromVendorIDOutput">
+    <wsdl:part name="return" type="tns:ShipmentIDFromVendorID" />
+  </wsdl:message>
+  <wsdl:message name="getWorkorderShipmentHistoryInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderShipmentID" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getWorkorderShipmentHistoryOutput">
+    <wsdl:part name="return" type="tns:WorkorderShipmentHistory" />
+  </wsdl:message>
+  <wsdl:message name="addOnHoldInput">
+    <wsdl:part name="login" type="tns:Login" />
+    <wsdl:part name="workorderId" type="xsd:int" />
+    <wsdl:part name="on_hold_reason_array" type="tns:ArrayOfInts" />
+    <wsdl:part name="explanation" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addOnHoldOutput">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="SoapHandlerPortType">
+    <wsdl:operation name="createWorkOrder">
+      <wsdl:input message="tns:createWorkOrderInput" />
+      <wsdl:output message="tns:createWorkOrderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="listWorkOrders">
+      <wsdl:input message="tns:listWorkOrdersInput" />
+      <wsdl:output message="tns:listWorkOrdersOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkOrderStatus">
+      <wsdl:input message="tns:getWorkOrderStatusInput" />
+      <wsdl:output message="tns:getWorkOrderStatusOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkOrder">
+      <wsdl:input message="tns:getWorkOrderInput" />
+      <wsdl:output message="tns:getWorkOrderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkOrderKeyEvents">
+      <wsdl:input message="tns:getWorkOrderKeyEventsInput" />
+      <wsdl:output message="tns:getWorkOrderKeyEventsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getAssignedTech">
+      <wsdl:input message="tns:getAssignedTechInput" />
+      <wsdl:output message="tns:getAssignedTechOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkOrderMessages">
+      <wsdl:input message="tns:getWorkOrderMessagesInput" />
+      <wsdl:output message="tns:getWorkOrderMessagesOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkOrderTotalPayment">
+      <wsdl:input message="tns:getWorkOrderTotalPaymentInput" />
+      <wsdl:output message="tns:getWorkOrderTotalPaymentOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkOrderProgress">
+      <wsdl:input message="tns:getWorkOrderProgressInput" />
+      <wsdl:output message="tns:getWorkOrderProgressOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="listCompanyDocuments">
+      <wsdl:input message="tns:listCompanyDocumentsInput" />
+      <wsdl:output message="tns:listCompanyDocumentsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjects">
+      <wsdl:input message="tns:getProjectsInput" />
+      <wsdl:output message="tns:getProjectsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <wsdl:input message="tns:getProjectDetailsInput" />
+      <wsdl:output message="tns:getProjectDetailsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="listAttachedCompanyDocuments">
+      <wsdl:input message="tns:listAttachedCompanyDocumentsInput" />
+      <wsdl:output message="tns:listAttachedCompanyDocumentsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="attachCompanyDocument">
+      <wsdl:input message="tns:attachCompanyDocumentInput" />
+      <wsdl:output message="tns:attachCompanyDocumentOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="detachCompanyDocument">
+      <wsdl:input message="tns:detachCompanyDocumentInput" />
+      <wsdl:output message="tns:detachCompanyDocumentOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="listMyTechniciansGroups">
+      <wsdl:input message="tns:listMyTechniciansGroupsInput" />
+      <wsdl:output message="tns:listMyTechniciansGroupsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="routeWorkOrderToGroup">
+      <wsdl:input message="tns:routeWorkOrderToGroupInput" />
+      <wsdl:output message="tns:routeWorkOrderToGroupOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="routeWorkOrderToProvider">
+      <wsdl:input message="tns:routeWorkOrderToProviderInput" />
+      <wsdl:output message="tns:routeWorkOrderToProviderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="approveAdditionalExpense">
+      <wsdl:input message="tns:approveAdditionalExpenseInput" />
+      <wsdl:output message="tns:approveAdditionalExpenseOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="publishWorkOrder">
+      <wsdl:input message="tns:publishWorkOrderInput" />
+      <wsdl:output message="tns:publishWorkOrderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="approveWorkOrder">
+      <wsdl:input message="tns:approveWorkOrderInput" />
+      <wsdl:output message="tns:approveWorkOrderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelWorkOrder">
+      <wsdl:input message="tns:cancelWorkOrderInput" />
+      <wsdl:output message="tns:cancelWorkOrderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="addMessage">
+      <wsdl:input message="tns:addMessageInput" />
+      <wsdl:output message="tns:addMessageOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="setCustomField">
+      <wsdl:input message="tns:setCustomFieldInput" />
+      <wsdl:output message="tns:setCustomFieldOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="setLabelOnWorkorder">
+      <wsdl:input message="tns:setLabelOnWorkorderInput" />
+      <wsdl:output message="tns:setLabelOnWorkorderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="unsetLabelOnWorkorder">
+      <wsdl:input message="tns:unsetLabelOnWorkorderInput" />
+      <wsdl:output message="tns:unsetLabelOnWorkorderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkorderProblems">
+      <wsdl:input message="tns:getWorkorderProblemsInput" />
+      <wsdl:output message="tns:getWorkorderProblemsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="reportWorkorderProblem">
+      <wsdl:input message="tns:reportWorkorderProblemInput" />
+      <wsdl:output message="tns:reportWorkorderProblemOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="resolveWorkorderProblem">
+      <wsdl:input message="tns:resolveWorkorderProblemInput" />
+      <wsdl:output message="tns:resolveWorkorderProblemOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="markWorkorderIncomplete">
+      <wsdl:input message="tns:markWorkorderIncompleteInput" />
+      <wsdl:output message="tns:markWorkorderIncompleteOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="satisfyCloseout">
+      <wsdl:input message="tns:satisfyCloseoutInput" />
+      <wsdl:output message="tns:satisfyCloseoutOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteShipmentOnWorkorder">
+      <wsdl:input message="tns:deleteShipmentOnWorkorderInput" />
+      <wsdl:output message="tns:deleteShipmentOnWorkorderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="addShipmentOnWorkorder">
+      <wsdl:input message="tns:addShipmentOnWorkorderInput" />
+      <wsdl:output message="tns:addShipmentOnWorkorderOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkorderShipments">
+      <wsdl:input message="tns:getWorkorderShipmentsInput" />
+      <wsdl:output message="tns:getWorkorderShipmentsOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentIDFromVendorID">
+      <wsdl:input message="tns:getShipmentIDFromVendorIDInput" />
+      <wsdl:output message="tns:getShipmentIDFromVendorIDOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkorderShipmentHistory">
+      <wsdl:input message="tns:getWorkorderShipmentHistoryInput" />
+      <wsdl:output message="tns:getWorkorderShipmentHistoryOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="addOnHold">
+      <wsdl:input message="tns:addOnHoldInput" />
+      <wsdl:output message="tns:addOnHoldOutput" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SoapHandlerBinding" type="tns:SoapHandlerPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="createWorkOrder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v/v3.11//fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="listWorkOrders">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkOrderStatus">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="satisfyCloseout">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="deleteShipmentOnWorkorder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="addShipmentOnWorkorder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkorderShipments">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getShipmentIDFromVendorID">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkorderShipmentHistory">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkOrder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkOrderKeyEvents">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getAssignedTech">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkOrderMessages">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkOrderTotalPayment">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkOrderProgress">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="listCompanyDocuments">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getProjects">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getProjectDetails">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="listAttachedCompanyDocuments">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="attachCompanyDocument">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="detachCompanyDocument">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="listMyTechniciansGroups">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="routeWorkOrderToGroup">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="routeWorkOrderToProvider">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="approveAdditionalExpense">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="publishWorkOrder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="approveWorkOrder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="cancelWorkOrder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="addMessage">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="setCustomField">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="setLabelOnWorkorder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="unsetLabelOnWorkorder">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getWorkorderProblems">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="reportWorkorderProblem">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="resolveWorkorderProblem">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="markWorkorderIncomplete">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="addOnHold">
+      <default:operation soapAction="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+      <wsdl:input>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <default:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapHandlerService">
+    <wsdl:port xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="SoapHandlerPort" binding="tns:SoapHandlerBinding">
+      <default:address location="https://api.fieldnation.com/api/v3.11/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
