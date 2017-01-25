@@ -25,6 +25,9 @@ namespace FieldNationApp.Models
         {
         }
 
+        public virtual DbSet<WorkOrder> WorkOrders { get; set; }
+        public virtual DbSet<WorkOrderLocation> Locations { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
