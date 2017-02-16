@@ -16,7 +16,7 @@ namespace FieldNationApp.FieldNationSoapService {
     public interface SoapHandlerPortType {
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message createWorkOrderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v/v3.11//fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v/v3.15//fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -27,22 +27,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.createWorkOrderResponse createWorkOrder(FieldNationApp.FieldNationSoapService.createWorkOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v/v3.11//fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v/v3.15//fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.createWorkOrderResponse> createWorkOrderAsync(FieldNationApp.FieldNationSoapService.createWorkOrderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message listWorkOrdersRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -53,22 +55,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.listWorkOrdersResponse listWorkOrders(FieldNationApp.FieldNationSoapService.listWorkOrdersRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.listWorkOrdersResponse> listWorkOrdersAsync(FieldNationApp.FieldNationSoapService.listWorkOrdersRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderStatusRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -79,22 +83,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkOrderStatusResponse getWorkOrderStatus(FieldNationApp.FieldNationSoapService.getWorkOrderStatusRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderStatusResponse> getWorkOrderStatusAsync(FieldNationApp.FieldNationSoapService.getWorkOrderStatusRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderRequestsRequest does not match the default value (urn:fieldnation)
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -105,22 +111,52 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
+        FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse getWorkOrderRequests(FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
+        System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse> getWorkOrderRequestsAsync(FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderRequest does not match the default value (urn:fieldnation)
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderProblem))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MyTechniciansGroup))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectCustomField))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectManager))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkOrderResponse getWorkOrder(FieldNationApp.FieldNationSoapService.getWorkOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderResponse> getWorkOrderAsync(FieldNationApp.FieldNationSoapService.getWorkOrderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderKeyEventsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -131,22 +167,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkOrderKeyEventsResponse getWorkOrderKeyEvents(FieldNationApp.FieldNationSoapService.getWorkOrderKeyEventsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderKeyEventsResponse> getWorkOrderKeyEventsAsync(FieldNationApp.FieldNationSoapService.getWorkOrderKeyEventsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getAssignedTechRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -157,22 +195,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getAssignedTechResponse getAssignedTech(FieldNationApp.FieldNationSoapService.getAssignedTechRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getAssignedTechResponse> getAssignedTechAsync(FieldNationApp.FieldNationSoapService.getAssignedTechRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderMessagesRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -183,22 +223,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkOrderMessagesResponse getWorkOrderMessages(FieldNationApp.FieldNationSoapService.getWorkOrderMessagesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderMessagesResponse> getWorkOrderMessagesAsync(FieldNationApp.FieldNationSoapService.getWorkOrderMessagesRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderTotalPaymentRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -209,22 +251,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkOrderTotalPaymentResponse getWorkOrderTotalPayment(FieldNationApp.FieldNationSoapService.getWorkOrderTotalPaymentRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderTotalPaymentResponse> getWorkOrderTotalPaymentAsync(FieldNationApp.FieldNationSoapService.getWorkOrderTotalPaymentRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkOrderProgressRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -235,22 +279,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkOrderProgressResponse getWorkOrderProgress(FieldNationApp.FieldNationSoapService.getWorkOrderProgressRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderProgressResponse> getWorkOrderProgressAsync(FieldNationApp.FieldNationSoapService.getWorkOrderProgressRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message listCompanyDocumentsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -261,22 +307,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.listCompanyDocumentsResponse listCompanyDocuments(FieldNationApp.FieldNationSoapService.listCompanyDocumentsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.listCompanyDocumentsResponse> listCompanyDocumentsAsync(FieldNationApp.FieldNationSoapService.listCompanyDocumentsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getProjectsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -287,22 +335,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getProjectsResponse getProjects(FieldNationApp.FieldNationSoapService.getProjectsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getProjectsResponse> getProjectsAsync(FieldNationApp.FieldNationSoapService.getProjectsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getProjectDetailsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -313,22 +363,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getProjectDetailsResponse getProjectDetails(FieldNationApp.FieldNationSoapService.getProjectDetailsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getProjectDetailsResponse> getProjectDetailsAsync(FieldNationApp.FieldNationSoapService.getProjectDetailsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message listAttachedCompanyDocumentsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -339,22 +391,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.listAttachedCompanyDocumentsResponse listAttachedCompanyDocuments(FieldNationApp.FieldNationSoapService.listAttachedCompanyDocumentsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.listAttachedCompanyDocumentsResponse> listAttachedCompanyDocumentsAsync(FieldNationApp.FieldNationSoapService.listAttachedCompanyDocumentsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message attachCompanyDocumentRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -365,22 +419,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.attachCompanyDocumentResponse attachCompanyDocument(FieldNationApp.FieldNationSoapService.attachCompanyDocumentRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.attachCompanyDocumentResponse> attachCompanyDocumentAsync(FieldNationApp.FieldNationSoapService.attachCompanyDocumentRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message detachCompanyDocumentRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -391,22 +447,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.detachCompanyDocumentResponse detachCompanyDocument(FieldNationApp.FieldNationSoapService.detachCompanyDocumentRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.detachCompanyDocumentResponse> detachCompanyDocumentAsync(FieldNationApp.FieldNationSoapService.detachCompanyDocumentRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message listMyTechniciansGroupsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -417,22 +475,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.listMyTechniciansGroupsResponse listMyTechniciansGroups(FieldNationApp.FieldNationSoapService.listMyTechniciansGroupsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.listMyTechniciansGroupsResponse> listMyTechniciansGroupsAsync(FieldNationApp.FieldNationSoapService.listMyTechniciansGroupsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message routeWorkOrderToGroupRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -443,22 +503,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.routeWorkOrderToGroupResponse routeWorkOrderToGroup(FieldNationApp.FieldNationSoapService.routeWorkOrderToGroupRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.routeWorkOrderToGroupResponse> routeWorkOrderToGroupAsync(FieldNationApp.FieldNationSoapService.routeWorkOrderToGroupRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message routeWorkOrderToProviderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -469,22 +531,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.routeWorkOrderToProviderResponse routeWorkOrderToProvider(FieldNationApp.FieldNationSoapService.routeWorkOrderToProviderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.routeWorkOrderToProviderResponse> routeWorkOrderToProviderAsync(FieldNationApp.FieldNationSoapService.routeWorkOrderToProviderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message approveAdditionalExpenseRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -495,22 +559,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.approveAdditionalExpenseResponse approveAdditionalExpense(FieldNationApp.FieldNationSoapService.approveAdditionalExpenseRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.approveAdditionalExpenseResponse> approveAdditionalExpenseAsync(FieldNationApp.FieldNationSoapService.approveAdditionalExpenseRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message publishWorkOrderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -521,22 +587,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.publishWorkOrderResponse publishWorkOrder(FieldNationApp.FieldNationSoapService.publishWorkOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.publishWorkOrderResponse> publishWorkOrderAsync(FieldNationApp.FieldNationSoapService.publishWorkOrderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message approveWorkOrderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -547,22 +615,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.approveWorkOrderResponse approveWorkOrder(FieldNationApp.FieldNationSoapService.approveWorkOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.approveWorkOrderResponse> approveWorkOrderAsync(FieldNationApp.FieldNationSoapService.approveWorkOrderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message cancelWorkOrderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -573,22 +643,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.cancelWorkOrderResponse cancelWorkOrder(FieldNationApp.FieldNationSoapService.cancelWorkOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.cancelWorkOrderResponse> cancelWorkOrderAsync(FieldNationApp.FieldNationSoapService.cancelWorkOrderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message addMessageRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -599,22 +671,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.addMessageResponse addMessage(FieldNationApp.FieldNationSoapService.addMessageRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.addMessageResponse> addMessageAsync(FieldNationApp.FieldNationSoapService.addMessageRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message setCustomFieldRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -625,22 +699,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.setCustomFieldResponse setCustomField(FieldNationApp.FieldNationSoapService.setCustomFieldRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.setCustomFieldResponse> setCustomFieldAsync(FieldNationApp.FieldNationSoapService.setCustomFieldRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message setLabelOnWorkorderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -651,22 +727,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.setLabelOnWorkorderResponse setLabelOnWorkorder(FieldNationApp.FieldNationSoapService.setLabelOnWorkorderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.setLabelOnWorkorderResponse> setLabelOnWorkorderAsync(FieldNationApp.FieldNationSoapService.setLabelOnWorkorderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message unsetLabelOnWorkorderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -677,22 +755,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.unsetLabelOnWorkorderResponse unsetLabelOnWorkorder(FieldNationApp.FieldNationSoapService.unsetLabelOnWorkorderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.unsetLabelOnWorkorderResponse> unsetLabelOnWorkorderAsync(FieldNationApp.FieldNationSoapService.unsetLabelOnWorkorderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkorderProblemsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -703,22 +783,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkorderProblemsResponse getWorkorderProblems(FieldNationApp.FieldNationSoapService.getWorkorderProblemsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkorderProblemsResponse> getWorkorderProblemsAsync(FieldNationApp.FieldNationSoapService.getWorkorderProblemsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message reportWorkorderProblemRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -729,22 +811,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.reportWorkorderProblemResponse reportWorkorderProblem(FieldNationApp.FieldNationSoapService.reportWorkorderProblemRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.reportWorkorderProblemResponse> reportWorkorderProblemAsync(FieldNationApp.FieldNationSoapService.reportWorkorderProblemRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message resolveWorkorderProblemRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -755,22 +839,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.resolveWorkorderProblemResponse resolveWorkorderProblem(FieldNationApp.FieldNationSoapService.resolveWorkorderProblemRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.resolveWorkorderProblemResponse> resolveWorkorderProblemAsync(FieldNationApp.FieldNationSoapService.resolveWorkorderProblemRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message markWorkorderIncompleteRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -781,22 +867,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.markWorkorderIncompleteResponse markWorkorderIncomplete(FieldNationApp.FieldNationSoapService.markWorkorderIncompleteRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.markWorkorderIncompleteResponse> markWorkorderIncompleteAsync(FieldNationApp.FieldNationSoapService.markWorkorderIncompleteRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message satisfyCloseoutRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -807,22 +895,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.satisfyCloseoutResponse satisfyCloseout(FieldNationApp.FieldNationSoapService.satisfyCloseoutRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.satisfyCloseoutResponse> satisfyCloseoutAsync(FieldNationApp.FieldNationSoapService.satisfyCloseoutRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message deleteShipmentOnWorkorderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -833,22 +923,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.deleteShipmentOnWorkorderResponse deleteShipmentOnWorkorder(FieldNationApp.FieldNationSoapService.deleteShipmentOnWorkorderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.deleteShipmentOnWorkorderResponse> deleteShipmentOnWorkorderAsync(FieldNationApp.FieldNationSoapService.deleteShipmentOnWorkorderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message addShipmentOnWorkorderRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -859,22 +951,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.addShipmentOnWorkorderResponse addShipmentOnWorkorder(FieldNationApp.FieldNationSoapService.addShipmentOnWorkorderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.addShipmentOnWorkorderResponse> addShipmentOnWorkorderAsync(FieldNationApp.FieldNationSoapService.addShipmentOnWorkorderRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkorderShipmentsRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -885,22 +979,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkorderShipmentsResponse getWorkorderShipments(FieldNationApp.FieldNationSoapService.getWorkorderShipmentsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkorderShipmentsResponse> getWorkorderShipmentsAsync(FieldNationApp.FieldNationSoapService.getWorkorderShipmentsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getShipmentIDFromVendorIDRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -911,22 +1007,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getShipmentIDFromVendorIDResponse getShipmentIDFromVendorID(FieldNationApp.FieldNationSoapService.getShipmentIDFromVendorIDRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getShipmentIDFromVendorIDResponse> getShipmentIDFromVendorIDAsync(FieldNationApp.FieldNationSoapService.getShipmentIDFromVendorIDRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getWorkorderShipmentHistoryRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -937,22 +1035,24 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.getWorkorderShipmentHistoryResponse getWorkorderShipmentHistory(FieldNationApp.FieldNationSoapService.getWorkorderShipmentHistoryRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkorderShipmentHistoryResponse> getWorkorderShipmentHistoryAsync(FieldNationApp.FieldNationSoapService.getWorkorderShipmentHistoryRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message addOnHoldRequest does not match the default value (urn:fieldnation)
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
@@ -963,23 +1063,53 @@ namespace FieldNationApp.FieldNationSoapService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
         FieldNationApp.FieldNationSoapService.addOnHoldResponse addOnHold(FieldNationApp.FieldNationSoapService.addOnHoldRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
         System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.addOnHoldResponse> addOnHoldAsync(FieldNationApp.FieldNationSoapService.addOnHoldRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper namespace () of message updateScheduleRequest does not match the default value (urn:fieldnation)
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ShipmentHistoryItem))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderShipments))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderProblem))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MyTechniciansGroup))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectCustomField))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectManager))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProjectTemplate))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Projects))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CompanyDocument))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkorderTask))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkSchedule))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TechUpload))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkLog))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PaymentDeduction))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Message))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalExpense))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkOrderRequest))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Label))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CloseoutReq))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AdditionalField))]
+        FieldNationApp.FieldNationSoapService.updateScheduleResponse updateSchedule(FieldNationApp.FieldNationSoapService.updateScheduleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl", ReplyAction="*")]
+        System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.updateScheduleResponse> updateScheduleAsync(FieldNationApp.FieldNationSoapService.updateScheduleRequest request);
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1036,7 +1166,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1080,7 +1210,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1176,7 +1306,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1233,7 +1363,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1316,7 +1446,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1439,7 +1569,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1496,7 +1626,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1540,7 +1670,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1584,7 +1714,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1628,25 +1758,27 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
     public partial class ProjectTemplate : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private int workorder_idField;
+        private int template_idField;
         
         private string template_descriptionField;
         
+        private int is_defaultField;
+        
         /// <remarks/>
-        public int workorder_id {
+        public int template_id {
             get {
-                return this.workorder_idField;
+                return this.template_idField;
             }
             set {
-                this.workorder_idField = value;
-                this.RaisePropertyChanged("workorder_id");
+                this.template_idField = value;
+                this.RaisePropertyChanged("template_id");
             }
         }
         
@@ -1661,6 +1793,17 @@ namespace FieldNationApp.FieldNationSoapService {
             }
         }
         
+        /// <remarks/>
+        public int is_default {
+            get {
+                return this.is_defaultField;
+            }
+            set {
+                this.is_defaultField = value;
+                this.RaisePropertyChanged("is_default");
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -1672,7 +1815,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1768,7 +1911,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1851,7 +1994,104 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class WorkorderTask : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int taskIdField;
+        
+        private string typeField;
+        
+        private string stageField;
+        
+        private int orderField;
+        
+        private int completedField;
+        
+        private System.Nullable<System.DateTime> completedAtDateField;
+        
+        /// <remarks/>
+        public int taskId {
+            get {
+                return this.taskIdField;
+            }
+            set {
+                this.taskIdField = value;
+                this.RaisePropertyChanged("taskId");
+            }
+        }
+        
+        /// <remarks/>
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
+            }
+        }
+        
+        /// <remarks/>
+        public string stage {
+            get {
+                return this.stageField;
+            }
+            set {
+                this.stageField = value;
+                this.RaisePropertyChanged("stage");
+            }
+        }
+        
+        /// <remarks/>
+        public int order {
+            get {
+                return this.orderField;
+            }
+            set {
+                this.orderField = value;
+                this.RaisePropertyChanged("order");
+            }
+        }
+        
+        /// <remarks/>
+        public int completed {
+            get {
+                return this.completedField;
+            }
+            set {
+                this.completedField = value;
+                this.RaisePropertyChanged("completed");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> completedAtDate {
+            get {
+                return this.completedAtDateField;
+            }
+            set {
+                this.completedAtDateField = value;
+                this.RaisePropertyChanged("completedAtDate");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1896,7 +2136,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1953,7 +2193,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2010,7 +2250,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2075,6 +2315,7 @@ namespace FieldNationApp.FieldNationSoapService {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
         public CheckInOutInfo checkInInfo {
             get {
                 return this.checkInInfoField;
@@ -2086,6 +2327,7 @@ namespace FieldNationApp.FieldNationSoapService {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
         public CheckInOutInfo checkOutInfo {
             get {
                 return this.checkOutInfoField;
@@ -2107,7 +2349,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2133,6 +2375,8 @@ namespace FieldNationApp.FieldNationSoapService {
         private WorkSchedule[] workScheduleField;
         
         private CloseoutReq[] closeoutReqsField;
+        
+        private WorkorderTask[] tasksField;
         
         /// <remarks/>
         public int totalDevices {
@@ -2248,6 +2492,18 @@ namespace FieldNationApp.FieldNationSoapService {
             }
         }
         
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public WorkorderTask[] tasks {
+            get {
+                return this.tasksField;
+            }
+            set {
+                this.tasksField = value;
+                this.RaisePropertyChanged("tasks");
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -2259,7 +2515,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2304,7 +2560,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2361,7 +2617,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2418,7 +2674,131 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class TotalPayment : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private AdditionalExpense[] expensesField;
+        
+        private PaymentDeduction[] deductionsField;
+        
+        private float laborEarnedField;
+        
+        private float totalApprovedExpensesField;
+        
+        private float totalDeductionsField;
+        
+        private float paymentAmountField;
+        
+        private System.Nullable<float> cancelFeeField;
+        
+        private System.Nullable<bool> cancelFeePendingField;
+        
+        /// <remarks/>
+        public AdditionalExpense[] expenses {
+            get {
+                return this.expensesField;
+            }
+            set {
+                this.expensesField = value;
+                this.RaisePropertyChanged("expenses");
+            }
+        }
+        
+        /// <remarks/>
+        public PaymentDeduction[] deductions {
+            get {
+                return this.deductionsField;
+            }
+            set {
+                this.deductionsField = value;
+                this.RaisePropertyChanged("deductions");
+            }
+        }
+        
+        /// <remarks/>
+        public float laborEarned {
+            get {
+                return this.laborEarnedField;
+            }
+            set {
+                this.laborEarnedField = value;
+                this.RaisePropertyChanged("laborEarned");
+            }
+        }
+        
+        /// <remarks/>
+        public float totalApprovedExpenses {
+            get {
+                return this.totalApprovedExpensesField;
+            }
+            set {
+                this.totalApprovedExpensesField = value;
+                this.RaisePropertyChanged("totalApprovedExpenses");
+            }
+        }
+        
+        /// <remarks/>
+        public float totalDeductions {
+            get {
+                return this.totalDeductionsField;
+            }
+            set {
+                this.totalDeductionsField = value;
+                this.RaisePropertyChanged("totalDeductions");
+            }
+        }
+        
+        /// <remarks/>
+        public float paymentAmount {
+            get {
+                return this.paymentAmountField;
+            }
+            set {
+                this.paymentAmountField = value;
+                this.RaisePropertyChanged("paymentAmount");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<float> cancelFee {
+            get {
+                return this.cancelFeeField;
+            }
+            set {
+                this.cancelFeeField = value;
+                this.RaisePropertyChanged("cancelFee");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> cancelFeePending {
+            get {
+                return this.cancelFeePendingField;
+            }
+            set {
+                this.cancelFeePendingField = value;
+                this.RaisePropertyChanged("cancelFeePending");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2437,7 +2817,7 @@ namespace FieldNationApp.FieldNationSoapService {
         
         private string reasonDeniedField;
         
-        private float quantityField;
+        private System.Nullable<float> quantityField;
         
         private string customExpenseIdField;
         
@@ -2508,7 +2888,8 @@ namespace FieldNationApp.FieldNationSoapService {
         }
         
         /// <remarks/>
-        public float quantity {
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<float> quantity {
             get {
                 return this.quantityField;
             }
@@ -2519,6 +2900,7 @@ namespace FieldNationApp.FieldNationSoapService {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
         public string customExpenseId {
             get {
                 return this.customExpenseIdField;
@@ -2540,116 +2922,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class TotalPayment : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private AdditionalExpense[] expensesField;
-        
-        private PaymentDeduction[] deductionsField;
-        
-        private float laborEarnedField;
-        
-        private float totalApprovedExpensesField;
-        
-        private float totalDeductionsField;
-        
-        private float paymentAmountField;
-        
-        private float cancelFeeField;
-        
-        /// <remarks/>
-        public AdditionalExpense[] expenses {
-            get {
-                return this.expensesField;
-            }
-            set {
-                this.expensesField = value;
-                this.RaisePropertyChanged("expenses");
-            }
-        }
-        
-        /// <remarks/>
-        public PaymentDeduction[] deductions {
-            get {
-                return this.deductionsField;
-            }
-            set {
-                this.deductionsField = value;
-                this.RaisePropertyChanged("deductions");
-            }
-        }
-        
-        /// <remarks/>
-        public float laborEarned {
-            get {
-                return this.laborEarnedField;
-            }
-            set {
-                this.laborEarnedField = value;
-                this.RaisePropertyChanged("laborEarned");
-            }
-        }
-        
-        /// <remarks/>
-        public float totalApprovedExpenses {
-            get {
-                return this.totalApprovedExpensesField;
-            }
-            set {
-                this.totalApprovedExpensesField = value;
-                this.RaisePropertyChanged("totalApprovedExpenses");
-            }
-        }
-        
-        /// <remarks/>
-        public float totalDeductions {
-            get {
-                return this.totalDeductionsField;
-            }
-            set {
-                this.totalDeductionsField = value;
-                this.RaisePropertyChanged("totalDeductions");
-            }
-        }
-        
-        /// <remarks/>
-        public float paymentAmount {
-            get {
-                return this.paymentAmountField;
-            }
-            set {
-                this.paymentAmountField = value;
-                this.RaisePropertyChanged("paymentAmount");
-            }
-        }
-        
-        /// <remarks/>
-        public float cancelFee {
-            get {
-                return this.cancelFeeField;
-            }
-            set {
-                this.cancelFeeField = value;
-                this.RaisePropertyChanged("cancelFee");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2719,116 +2992,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class Technician : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int uidField;
-        
-        private string firstNameField;
-        
-        private string lastNameField;
-        
-        private string cityField;
-        
-        private string stateField;
-        
-        private string zipField;
-        
-        private AdditionalField[] additionalFieldsField;
-        
-        /// <remarks/>
-        public int uid {
-            get {
-                return this.uidField;
-            }
-            set {
-                this.uidField = value;
-                this.RaisePropertyChanged("uid");
-            }
-        }
-        
-        /// <remarks/>
-        public string firstName {
-            get {
-                return this.firstNameField;
-            }
-            set {
-                this.firstNameField = value;
-                this.RaisePropertyChanged("firstName");
-            }
-        }
-        
-        /// <remarks/>
-        public string lastName {
-            get {
-                return this.lastNameField;
-            }
-            set {
-                this.lastNameField = value;
-                this.RaisePropertyChanged("lastName");
-            }
-        }
-        
-        /// <remarks/>
-        public string city {
-            get {
-                return this.cityField;
-            }
-            set {
-                this.cityField = value;
-                this.RaisePropertyChanged("city");
-            }
-        }
-        
-        /// <remarks/>
-        public string state {
-            get {
-                return this.stateField;
-            }
-            set {
-                this.stateField = value;
-                this.RaisePropertyChanged("state");
-            }
-        }
-        
-        /// <remarks/>
-        public string zip {
-            get {
-                return this.zipField;
-            }
-            set {
-                this.zipField = value;
-                this.RaisePropertyChanged("zip");
-            }
-        }
-        
-        /// <remarks/>
-        public AdditionalField[] additionalFields {
-            get {
-                return this.additionalFieldsField;
-            }
-            set {
-                this.additionalFieldsField = value;
-                this.RaisePropertyChanged("additionalFields");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2958,49 +3122,64 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class CreateWorkOrderResult : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class WorkOrderCounterOffer : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private bool successField;
+        private PayInfo payInfoField;
         
-        private string messageField;
+        private TimeRange startTimeField;
         
-        private int workorderIDField;
+        private AdditionalExpense[] expensesField;
+        
+        private string explanationField;
         
         /// <remarks/>
-        public bool success {
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public PayInfo payInfo {
             get {
-                return this.successField;
+                return this.payInfoField;
             }
             set {
-                this.successField = value;
-                this.RaisePropertyChanged("success");
+                this.payInfoField = value;
+                this.RaisePropertyChanged("payInfo");
             }
         }
         
         /// <remarks/>
-        public string message {
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public TimeRange startTime {
             get {
-                return this.messageField;
+                return this.startTimeField;
             }
             set {
-                this.messageField = value;
-                this.RaisePropertyChanged("message");
+                this.startTimeField = value;
+                this.RaisePropertyChanged("startTime");
             }
         }
         
         /// <remarks/>
-        public int workorderID {
+        public AdditionalExpense[] expenses {
             get {
-                return this.workorderIDField;
+                return this.expensesField;
             }
             set {
-                this.workorderIDField = value;
-                this.RaisePropertyChanged("workorderID");
+                this.expensesField = value;
+                this.RaisePropertyChanged("expenses");
+            }
+        }
+        
+        /// <remarks/>
+        public string explanation {
+            get {
+                return this.explanationField;
+            }
+            set {
+                this.explanationField = value;
+                this.RaisePropertyChanged("explanation");
             }
         }
         
@@ -3015,222 +3194,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class Label : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int labelIdField;
-        
-        private string labelNameField;
-        
-        private int hideFromTechField;
-        
-        private int techCanEditField;
-        
-        /// <remarks/>
-        public int labelId {
-            get {
-                return this.labelIdField;
-            }
-            set {
-                this.labelIdField = value;
-                this.RaisePropertyChanged("labelId");
-            }
-        }
-        
-        /// <remarks/>
-        public string labelName {
-            get {
-                return this.labelNameField;
-            }
-            set {
-                this.labelNameField = value;
-                this.RaisePropertyChanged("labelName");
-            }
-        }
-        
-        /// <remarks/>
-        public int hideFromTech {
-            get {
-                return this.hideFromTechField;
-            }
-            set {
-                this.hideFromTechField = value;
-                this.RaisePropertyChanged("hideFromTech");
-            }
-        }
-        
-        /// <remarks/>
-        public int techCanEdit {
-            get {
-                return this.techCanEditField;
-            }
-            set {
-                this.techCanEditField = value;
-                this.RaisePropertyChanged("techCanEdit");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class PayInfoBlended : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private float baseAmountField;
-        
-        private float baseHoursField;
-        
-        private float additionalHourlyRateField;
-        
-        private float maxAdditionalHoursField;
-        
-        /// <remarks/>
-        public float baseAmount {
-            get {
-                return this.baseAmountField;
-            }
-            set {
-                this.baseAmountField = value;
-                this.RaisePropertyChanged("baseAmount");
-            }
-        }
-        
-        /// <remarks/>
-        public float baseHours {
-            get {
-                return this.baseHoursField;
-            }
-            set {
-                this.baseHoursField = value;
-                this.RaisePropertyChanged("baseHours");
-            }
-        }
-        
-        /// <remarks/>
-        public float additionalHourlyRate {
-            get {
-                return this.additionalHourlyRateField;
-            }
-            set {
-                this.additionalHourlyRateField = value;
-                this.RaisePropertyChanged("additionalHourlyRate");
-            }
-        }
-        
-        /// <remarks/>
-        public float maxAdditionalHours {
-            get {
-                return this.maxAdditionalHoursField;
-            }
-            set {
-                this.maxAdditionalHoursField = value;
-                this.RaisePropertyChanged("maxAdditionalHours");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class PayInfoRate : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private float rateField;
-        
-        private float maxUnitsField;
-        
-        /// <remarks/>
-        public float rate {
-            get {
-                return this.rateField;
-            }
-            set {
-                this.rateField = value;
-                this.RaisePropertyChanged("rate");
-            }
-        }
-        
-        /// <remarks/>
-        public float maxUnits {
-            get {
-                return this.maxUnitsField;
-            }
-            set {
-                this.maxUnitsField = value;
-                this.RaisePropertyChanged("maxUnits");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class PayInfoFixed : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private float amountField;
-        
-        /// <remarks/>
-        public float amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-                this.RaisePropertyChanged("amount");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3300,7 +3264,152 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class PayInfoFixed : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private float amountField;
+        
+        /// <remarks/>
+        public float amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+                this.RaisePropertyChanged("amount");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class PayInfoRate : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private float rateField;
+        
+        private float maxUnitsField;
+        
+        /// <remarks/>
+        public float rate {
+            get {
+                return this.rateField;
+            }
+            set {
+                this.rateField = value;
+                this.RaisePropertyChanged("rate");
+            }
+        }
+        
+        /// <remarks/>
+        public float maxUnits {
+            get {
+                return this.maxUnitsField;
+            }
+            set {
+                this.maxUnitsField = value;
+                this.RaisePropertyChanged("maxUnits");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class PayInfoBlended : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private float baseAmountField;
+        
+        private float baseHoursField;
+        
+        private float additionalHourlyRateField;
+        
+        private float maxAdditionalHoursField;
+        
+        /// <remarks/>
+        public float baseAmount {
+            get {
+                return this.baseAmountField;
+            }
+            set {
+                this.baseAmountField = value;
+                this.RaisePropertyChanged("baseAmount");
+            }
+        }
+        
+        /// <remarks/>
+        public float baseHours {
+            get {
+                return this.baseHoursField;
+            }
+            set {
+                this.baseHoursField = value;
+                this.RaisePropertyChanged("baseHours");
+            }
+        }
+        
+        /// <remarks/>
+        public float additionalHourlyRate {
+            get {
+                return this.additionalHourlyRateField;
+            }
+            set {
+                this.additionalHourlyRateField = value;
+                this.RaisePropertyChanged("additionalHourlyRate");
+            }
+        }
+        
+        /// <remarks/>
+        public float maxAdditionalHours {
+            get {
+                return this.maxAdditionalHoursField;
+            }
+            set {
+                this.maxAdditionalHoursField = value;
+                this.RaisePropertyChanged("maxAdditionalHours");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3344,22 +3453,18 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
-    public partial class ServiceLocation : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Technician : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string nameField;
+        private int uidField;
         
-        private LocationType typeField;
+        private string firstNameField;
         
-        private string countryField;
-        
-        private string address1Field;
-        
-        private string address2Field;
+        private string lastNameField;
         
         private string cityField;
         
@@ -3367,64 +3472,38 @@ namespace FieldNationApp.FieldNationSoapService {
         
         private string zipField;
         
-        private string contactNameField;
-        
-        private string contactPhoneField;
-        
-        private string contactEmailField;
+        private AdditionalField[] additionalFieldsField;
         
         /// <remarks/>
-        public string name {
+        public int uid {
             get {
-                return this.nameField;
+                return this.uidField;
             }
             set {
-                this.nameField = value;
-                this.RaisePropertyChanged("name");
+                this.uidField = value;
+                this.RaisePropertyChanged("uid");
             }
         }
         
         /// <remarks/>
-        public LocationType type {
+        public string firstName {
             get {
-                return this.typeField;
+                return this.firstNameField;
             }
             set {
-                this.typeField = value;
-                this.RaisePropertyChanged("type");
+                this.firstNameField = value;
+                this.RaisePropertyChanged("firstName");
             }
         }
         
         /// <remarks/>
-        public string country {
+        public string lastName {
             get {
-                return this.countryField;
+                return this.lastNameField;
             }
             set {
-                this.countryField = value;
-                this.RaisePropertyChanged("country");
-            }
-        }
-        
-        /// <remarks/>
-        public string address1 {
-            get {
-                return this.address1Field;
-            }
-            set {
-                this.address1Field = value;
-                this.RaisePropertyChanged("address1");
-            }
-        }
-        
-        /// <remarks/>
-        public string address2 {
-            get {
-                return this.address2Field;
-            }
-            set {
-                this.address2Field = value;
-                this.RaisePropertyChanged("address2");
+                this.lastNameField = value;
+                this.RaisePropertyChanged("lastName");
             }
         }
         
@@ -3462,35 +3541,13 @@ namespace FieldNationApp.FieldNationSoapService {
         }
         
         /// <remarks/>
-        public string contactName {
+        public AdditionalField[] additionalFields {
             get {
-                return this.contactNameField;
+                return this.additionalFieldsField;
             }
             set {
-                this.contactNameField = value;
-                this.RaisePropertyChanged("contactName");
-            }
-        }
-        
-        /// <remarks/>
-        public string contactPhone {
-            get {
-                return this.contactPhoneField;
-            }
-            set {
-                this.contactPhoneField = value;
-                this.RaisePropertyChanged("contactPhone");
-            }
-        }
-        
-        /// <remarks/>
-        public string contactEmail {
-            get {
-                return this.contactEmailField;
-            }
-            set {
-                this.contactEmailField = value;
-                this.RaisePropertyChanged("contactEmail");
+                this.additionalFieldsField = value;
+                this.RaisePropertyChanged("additionalFields");
             }
         }
         
@@ -3505,7 +3562,405 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class WorkOrderRequest : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime timeRequestedField;
+        
+        private System.Nullable<System.DateTime> timeExpiresField;
+        
+        private Technician requesterField;
+        
+        private bool declinedField;
+        
+        private WorkOrderCounterOffer counterOfferField;
+        
+        /// <remarks/>
+        public System.DateTime timeRequested {
+            get {
+                return this.timeRequestedField;
+            }
+            set {
+                this.timeRequestedField = value;
+                this.RaisePropertyChanged("timeRequested");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> timeExpires {
+            get {
+                return this.timeExpiresField;
+            }
+            set {
+                this.timeExpiresField = value;
+                this.RaisePropertyChanged("timeExpires");
+            }
+        }
+        
+        /// <remarks/>
+        public Technician requester {
+            get {
+                return this.requesterField;
+            }
+            set {
+                this.requesterField = value;
+                this.RaisePropertyChanged("requester");
+            }
+        }
+        
+        /// <remarks/>
+        public bool declined {
+            get {
+                return this.declinedField;
+            }
+            set {
+                this.declinedField = value;
+                this.RaisePropertyChanged("declined");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public WorkOrderCounterOffer counterOffer {
+            get {
+                return this.counterOfferField;
+            }
+            set {
+                this.counterOfferField = value;
+                this.RaisePropertyChanged("counterOffer");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class CreateWorkOrderResult : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool successField;
+        
+        private string messageField;
+        
+        private int workorderIDField;
+        
+        /// <remarks/>
+        public bool success {
+            get {
+                return this.successField;
+            }
+            set {
+                this.successField = value;
+                this.RaisePropertyChanged("success");
+            }
+        }
+        
+        /// <remarks/>
+        public string message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+                this.RaisePropertyChanged("message");
+            }
+        }
+        
+        /// <remarks/>
+        public int workorderID {
+            get {
+                return this.workorderIDField;
+            }
+            set {
+                this.workorderIDField = value;
+                this.RaisePropertyChanged("workorderID");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class Label : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int labelIdField;
+        
+        private string labelNameField;
+        
+        private int hideFromTechField;
+        
+        private int techCanEditField;
+        
+        /// <remarks/>
+        public int labelId {
+            get {
+                return this.labelIdField;
+            }
+            set {
+                this.labelIdField = value;
+                this.RaisePropertyChanged("labelId");
+            }
+        }
+        
+        /// <remarks/>
+        public string labelName {
+            get {
+                return this.labelNameField;
+            }
+            set {
+                this.labelNameField = value;
+                this.RaisePropertyChanged("labelName");
+            }
+        }
+        
+        /// <remarks/>
+        public int hideFromTech {
+            get {
+                return this.hideFromTechField;
+            }
+            set {
+                this.hideFromTechField = value;
+                this.RaisePropertyChanged("hideFromTech");
+            }
+        }
+        
+        /// <remarks/>
+        public int techCanEdit {
+            get {
+                return this.techCanEditField;
+            }
+            set {
+                this.techCanEditField = value;
+                this.RaisePropertyChanged("techCanEdit");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
+    public partial class ServiceLocation : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string nameField;
+        
+        private System.Nullable<LocationType> typeField;
+        
+        private string countryField;
+        
+        private string address1Field;
+        
+        private string address2Field;
+        
+        private string cityField;
+        
+        private string stateField;
+        
+        private string zipField;
+        
+        private string contactNameField;
+        
+        private string contactPhoneField;
+        
+        private string contactEmailField;
+        
+        private System.Nullable<bool> isRemoteField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+                this.RaisePropertyChanged("name");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<LocationType> type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+                this.RaisePropertyChanged("country");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string address1 {
+            get {
+                return this.address1Field;
+            }
+            set {
+                this.address1Field = value;
+                this.RaisePropertyChanged("address1");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string address2 {
+            get {
+                return this.address2Field;
+            }
+            set {
+                this.address2Field = value;
+                this.RaisePropertyChanged("address2");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string city {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+                this.RaisePropertyChanged("city");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string state {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+                this.RaisePropertyChanged("state");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string zip {
+            get {
+                return this.zipField;
+            }
+            set {
+                this.zipField = value;
+                this.RaisePropertyChanged("zip");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string contactName {
+            get {
+                return this.contactNameField;
+            }
+            set {
+                this.contactNameField = value;
+                this.RaisePropertyChanged("contactName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string contactPhone {
+            get {
+                return this.contactPhoneField;
+            }
+            set {
+                this.contactPhoneField = value;
+                this.RaisePropertyChanged("contactPhone");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string contactEmail {
+            get {
+                return this.contactEmailField;
+            }
+            set {
+                this.contactEmailField = value;
+                this.RaisePropertyChanged("contactEmail");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> isRemote {
+            get {
+                return this.isRemoteField;
+            }
+            set {
+                this.isRemoteField = value;
+                this.RaisePropertyChanged("isRemote");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.SoapTypeAttribute(Namespace="urn:fieldnation")]
     public enum LocationType {
@@ -3527,7 +3982,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3597,7 +4052,7 @@ namespace FieldNationApp.FieldNationSoapService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2036.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3625,6 +4080,8 @@ namespace FieldNationApp.FieldNationSoapService {
         private bool printLinkField;
         
         private Label[] labelsField;
+        
+        private string templateIdField;
         
         /// <remarks/>
         public string group {
@@ -3744,6 +4201,18 @@ namespace FieldNationApp.FieldNationSoapService {
             set {
                 this.labelsField = value;
                 this.RaisePropertyChanged("labels");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.SoapElementAttribute(IsNullable=true)]
+        public string templateId {
+            get {
+                return this.templateIdField;
+            }
+            set {
+                this.templateIdField = value;
+                this.RaisePropertyChanged("templateId");
             }
         }
         
@@ -3871,6 +4340,44 @@ namespace FieldNationApp.FieldNationSoapService {
         }
         
         public getWorkOrderStatusResponse(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getWorkOrderRequests", WrapperNamespace="", IsWrapped=true)]
+    public partial class getWorkOrderRequestsRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public FieldNationApp.FieldNationSoapService.Login login;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+        public int workorderID;
+        
+        public getWorkOrderRequestsRequest() {
+        }
+        
+        public getWorkOrderRequestsRequest(FieldNationApp.FieldNationSoapService.Login login, int workorderID) {
+            this.login = login;
+            this.workorderID = workorderID;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getWorkOrderRequestsResponse", WrapperNamespace="", IsWrapped=true)]
+    public partial class getWorkOrderRequestsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public FieldNationApp.FieldNationSoapService.WorkOrderRequest[] @return;
+        
+        public getWorkOrderRequestsResponse() {
+        }
+        
+        public getWorkOrderRequestsResponse(FieldNationApp.FieldNationSoapService.WorkOrderRequest[] @return) {
             this.@return = @return;
         }
     }
@@ -5257,12 +5764,58 @@ namespace FieldNationApp.FieldNationSoapService {
     public partial class addOnHoldResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string @return;
+        public FieldNationApp.FieldNationSoapService.MethodResult @return;
         
         public addOnHoldResponse() {
         }
         
-        public addOnHoldResponse(string @return) {
+        public addOnHoldResponse(FieldNationApp.FieldNationSoapService.MethodResult @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateSchedule", WrapperNamespace="", IsWrapped=true)]
+    public partial class updateScheduleRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public FieldNationApp.FieldNationSoapService.Login login;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+        public int workorderID;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+        public System.DateTime startTime;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=3)]
+        public System.DateTime endTime;
+        
+        public updateScheduleRequest() {
+        }
+        
+        public updateScheduleRequest(FieldNationApp.FieldNationSoapService.Login login, int workorderID, System.DateTime startTime, System.DateTime endTime) {
+            this.login = login;
+            this.workorderID = workorderID;
+            this.startTime = startTime;
+            this.endTime = endTime;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateScheduleResponse", WrapperNamespace="", IsWrapped=true)]
+    public partial class updateScheduleResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public FieldNationApp.FieldNationSoapService.MethodResult @return;
+        
+        public updateScheduleResponse() {
+        }
+        
+        public updateScheduleResponse(FieldNationApp.FieldNationSoapService.MethodResult @return) {
             this.@return = @return;
         }
     }
@@ -5369,6 +5922,31 @@ namespace FieldNationApp.FieldNationSoapService {
             inValue.login = login;
             inValue.workorderID = workorderID;
             return ((FieldNationApp.FieldNationSoapService.SoapHandlerPortType)(this)).getWorkOrderStatusAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse FieldNationApp.FieldNationSoapService.SoapHandlerPortType.getWorkOrderRequests(FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest request) {
+            return base.Channel.getWorkOrderRequests(request);
+        }
+        
+        public FieldNationApp.FieldNationSoapService.WorkOrderRequest[] getWorkOrderRequests(FieldNationApp.FieldNationSoapService.Login login, int workorderID) {
+            FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest inValue = new FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest();
+            inValue.login = login;
+            inValue.workorderID = workorderID;
+            FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse retVal = ((FieldNationApp.FieldNationSoapService.SoapHandlerPortType)(this)).getWorkOrderRequests(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse> FieldNationApp.FieldNationSoapService.SoapHandlerPortType.getWorkOrderRequestsAsync(FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest request) {
+            return base.Channel.getWorkOrderRequestsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse> getWorkOrderRequestsAsync(FieldNationApp.FieldNationSoapService.Login login, int workorderID) {
+            FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest inValue = new FieldNationApp.FieldNationSoapService.getWorkOrderRequestsRequest();
+            inValue.login = login;
+            inValue.workorderID = workorderID;
+            return ((FieldNationApp.FieldNationSoapService.SoapHandlerPortType)(this)).getWorkOrderRequestsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6247,7 +6825,7 @@ namespace FieldNationApp.FieldNationSoapService {
             return base.Channel.addOnHold(request);
         }
         
-        public string addOnHold(FieldNationApp.FieldNationSoapService.Login login, int workorderId, int[] on_hold_reason_array, string explanation) {
+        public FieldNationApp.FieldNationSoapService.MethodResult addOnHold(FieldNationApp.FieldNationSoapService.Login login, int workorderId, int[] on_hold_reason_array, string explanation) {
             FieldNationApp.FieldNationSoapService.addOnHoldRequest inValue = new FieldNationApp.FieldNationSoapService.addOnHoldRequest();
             inValue.login = login;
             inValue.workorderId = workorderId;
@@ -6269,6 +6847,35 @@ namespace FieldNationApp.FieldNationSoapService {
             inValue.on_hold_reason_array = on_hold_reason_array;
             inValue.explanation = explanation;
             return ((FieldNationApp.FieldNationSoapService.SoapHandlerPortType)(this)).addOnHoldAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        FieldNationApp.FieldNationSoapService.updateScheduleResponse FieldNationApp.FieldNationSoapService.SoapHandlerPortType.updateSchedule(FieldNationApp.FieldNationSoapService.updateScheduleRequest request) {
+            return base.Channel.updateSchedule(request);
+        }
+        
+        public FieldNationApp.FieldNationSoapService.MethodResult updateSchedule(FieldNationApp.FieldNationSoapService.Login login, int workorderID, System.DateTime startTime, System.DateTime endTime) {
+            FieldNationApp.FieldNationSoapService.updateScheduleRequest inValue = new FieldNationApp.FieldNationSoapService.updateScheduleRequest();
+            inValue.login = login;
+            inValue.workorderID = workorderID;
+            inValue.startTime = startTime;
+            inValue.endTime = endTime;
+            FieldNationApp.FieldNationSoapService.updateScheduleResponse retVal = ((FieldNationApp.FieldNationSoapService.SoapHandlerPortType)(this)).updateSchedule(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.updateScheduleResponse> FieldNationApp.FieldNationSoapService.SoapHandlerPortType.updateScheduleAsync(FieldNationApp.FieldNationSoapService.updateScheduleRequest request) {
+            return base.Channel.updateScheduleAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<FieldNationApp.FieldNationSoapService.updateScheduleResponse> updateScheduleAsync(FieldNationApp.FieldNationSoapService.Login login, int workorderID, System.DateTime startTime, System.DateTime endTime) {
+            FieldNationApp.FieldNationSoapService.updateScheduleRequest inValue = new FieldNationApp.FieldNationSoapService.updateScheduleRequest();
+            inValue.login = login;
+            inValue.workorderID = workorderID;
+            inValue.startTime = startTime;
+            inValue.endTime = endTime;
+            return ((FieldNationApp.FieldNationSoapService.SoapHandlerPortType)(this)).updateScheduleAsync(inValue);
         }
     }
 }

@@ -390,6 +390,16 @@
     <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkorderShipments.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\FieldNationSoapService\fieldnation1.wsdl" />
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.getWorkOrderRequestsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.updateScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\FieldNationSoapService\FieldNationApp.FieldNationSoapService.WorkOrderRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\FieldNationSoapService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -428,7 +438,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <None Include="Service References\FieldNationSoapService\fieldnation.wsdl" />
     <Content Include="Views\WorkOrders\Create.cshtml" />
     <Content Include="Views\WorkOrders\Delete.cshtml" />
     <Content Include="Views\WorkOrders\Details.cshtml" />

@@ -7,6 +7,14 @@ namespace FieldNationApp.Models
 {
     public partial class WorkOrder
     {
+        public async Task<getWorkOrderRequestsResponse> GetWorkorderRequests(int n)
+        {
+            var client = new SoapHandlerPortTypeClient();
+            Login login = FieldNationLoginFactory.GetLogin();
+
+            return await client.getWorkOrderRequestsAsync(login, n);
+        }
+
         public async Task<createWorkOrderResponse> CreateOnFieldNation()
         {
             var client = new SoapHandlerPortTypeClient();

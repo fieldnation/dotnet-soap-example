@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="fieldnation.wsdl" MetadataType="Wsdl" ID="c58a5927-4a92-42ed-8c3f-f5b2a8604b2d" SourceId="1" SourceUrl="https://api.fieldnation.com/api/v3.11/fieldnation.wsdl" />
+    <MetadataFile FileName="fieldnation1.wsdl" MetadataType="Wsdl" ID="89404f66-39f7-44ac-b581-d6f8d44b496d" SourceId="1" SourceUrl="https://api.fieldnation.com/api/v3.15/fieldnation.wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

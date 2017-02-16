@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="e8mKIaTQfQ+sLNcyZ2d19ohPJr4=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="z0SZWTT+y4+Jnr2UYiVvAwdQXlI=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="SoapHandlerBinding">
       <properties>
@@ -221,10 +221,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="SoapHandlerPort" contract="FieldNationSoapService.SoapHandlerPortType" bindingType="basicHttpBinding" address="https://api.fieldnation.com/api/v3.11/" bindingConfiguration="SoapHandlerBinding">
+    <endpoint name="SoapHandlerPort" contract="FieldNationSoapService.SoapHandlerPortType" bindingType="basicHttpBinding" address="https://api.fieldnation.com/api/v3.15/" bindingConfiguration="SoapHandlerBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>https://api.fieldnation.com/api/v3.11/</serializedValue>
+          <serializedValue>https://api.fieldnation.com/api/v3.15/</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
