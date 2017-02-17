@@ -12,6 +12,7 @@ namespace FieldNationApp.Models
             this.PaymentInformation = new PaymentInformation();
         }
         public int WorkOrderId { get; set; }
+        public int FieldNationWorkOrderId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Instructions { get; set; }
@@ -50,5 +51,11 @@ namespace FieldNationApp.Models
         public decimal Amount { get; set; }
         public float ExpectedHours { get; set; }
         public float MaxHours { get; set; }
+    }
+
+    public class WorkOrderRequestsViewModel
+    {
+        public WorkOrder WorkOrder { get; set; }
+        public FieldNationSoapService.getWorkOrderRequestsResponse Requests { get; set; }
     }
 }

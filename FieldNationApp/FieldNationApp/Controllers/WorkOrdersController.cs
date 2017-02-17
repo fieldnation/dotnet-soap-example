@@ -59,9 +59,10 @@ namespace FieldNationApp.Controllers
             {
                 var location = db.Locations.Find(vm.WorkOrder.WorkOrderLocationId);
                 vm.WorkOrder.WorkOrderLocation = location;
+                var fnResponse = await vm.WorkOrder.CreateOnFieldNation();
+                vm.WorkOrder.FieldNationWorkOrderId = fnResponse.@return.workorderID;
                 db.WorkOrders.Add(vm.WorkOrder);
                 await db.SaveChangesAsync();
-                var fnResponse = await vm.WorkOrder.CreateOnFieldNation();
                 return RedirectToAction("Index");
             }
 
@@ -123,6 +124,26 @@ namespace FieldNationApp.Controllers
             db.WorkOrders.Remove(workOrder);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        // GET: WorkOrders/Requests/5
+        public async Task<ActionResult> Requests(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            WorkOrder workOrder = await db.WorkOrders.FindAsync(id);
+            if (workOrder == null)
+            {
+                return HttpNotFound();
+            }
+
+            var model = new WorkOrderRequestsViewModel();
+            model.WorkOrder = workOrder;
+            model.Requests = await workOrder.GetWorkorderRequests();
+
+            return View(model);
         }
 
         protected override void Dispose(bool disposing)

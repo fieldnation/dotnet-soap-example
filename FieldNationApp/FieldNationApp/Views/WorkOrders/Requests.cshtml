@@ -1,0 +1,25 @@
+﻿@model FieldNationApp.Models.WorkOrderRequestsViewModel
+
+@{
+    ViewBag.Title = "Requests";
+}
+
+<h2>Requests</h2>
+
+<div>
+    <h4>WorkOrderRequestsViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkOrder)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Workorder List", "Index")
+</p>
